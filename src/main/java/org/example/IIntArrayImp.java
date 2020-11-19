@@ -15,6 +15,9 @@ public class IIntArrayImp implements IIntArray {
     @Override
     public double getAverage() {
         try{
+            if(intArr.length == 0){
+                return 0;
+            }
             int length = intArr.length;
             int sum = 0;
             for (int value : intArr) {
